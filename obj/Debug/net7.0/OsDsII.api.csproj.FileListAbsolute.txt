@@ -1,0 +1,76 @@
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\appsettings.Development.json
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\appsettings.json
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\OsDsII.api.exe
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\OsDsII.api.deps.json
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\OsDsII.api.runtimeconfig.json
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\OsDsII.api.dll
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\OsDsII.api.pdb
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\OsDsII.api.csproj.AssemblyReference.cache
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\OsDsII.api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\OsDsII.api.AssemblyInfoInputs.cache
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\OsDsII.api.AssemblyInfo.cs
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\OsDsII.api.csproj.CoreCompileInputs.cache
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\OsDsII.api.MvcApplicationPartsAssemblyInfo.cs
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\OsDsII.api.MvcApplicationPartsAssemblyInfo.cache
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\staticwebassets\msbuild.OsDsII.api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\staticwebassets\msbuild.build.OsDsII.api.props
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.OsDsII.api.props
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.OsDsII.api.props
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\staticwebassets.build.json
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\staticwebassets.development.json
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\scopedcss\bundle\OsDsII.api.styles.css
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\OsDsII.api.csproj.CopyComplete
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\OsDsII.api.dll
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\refint\OsDsII.api.dll
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\OsDsII.api.pdb
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\OsDsII.api.genruntimeconfig.cache
+C:\Gusta\DS2\1\OsDsII.api\obj\Debug\net7.0\ref\OsDsII.api.dll
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\MySqlConnector.dll
+C:\Gusta\DS2\1\OsDsII.api\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\OsDsII.api.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\OsDsII.api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\OsDsII.api.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\OsDsII.api.AssemblyInfo.cs
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\OsDsII.api.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\OsDsII.api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\OsDsII.api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\OsDsII.api.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\refint\OsDsII.api.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\OsDsII.api.pdb
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\appsettings.json
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\OsDsII.api.exe
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\OsDsII.api.deps.json
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\OsDsII.api.runtimeconfig.json
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\OsDsII.api.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\OsDsII.api.pdb
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\MySqlConnector.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\staticwebassets\msbuild.OsDsII.api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\staticwebassets\msbuild.build.OsDsII.api.props
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.OsDsII.api.props
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.OsDsII.api.props
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\scopedcss\bundle\OsDsII.api.styles.css
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\OsDsII.api.csproj.CopyComplete
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\OsDsII.api.genruntimeconfig.cache
+C:\Users\User\OneDrive\Área de Trabalho\OsDsii\OsDsII\OsDsII.api\obj\Debug\net7.0\ref\OsDsII.api.dll
