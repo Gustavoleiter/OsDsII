@@ -1,74 +1,77 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
-
-using OsDsII.api.Data;
 using OsDsII.api.Models;
-using OsDsII.api.Services.Interfaces;
 using OsDsII.api.Repositories.Interfaces;
-using Microsoft.AspNetCore.Http.HttpResults;
+using OsDsII.api.Services.Interaces;
+using OsDsII.api.Repositories.UnitOfWork;
+using OsDsII.api.Exceptions;
 
 namespace OsDsII.api.Services
 {
-    public class CustumersService : ICustomersService
+    public class CustomersService : ICustomersService
     {
-        private readonly DataContext _context;
+        private readonly ICustomersRepository _customersRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        private readonly ICustomersRepository _custumersRepository;
-
-        public CustumersService(DataContext context, ICustomersRepository customersRepository)
+        public CustomersService(ICustomersRepository customersRepository, IUnitOfWork unitOfWork)
         {
-            _context = context;
-            _custumersRepository = customersRepository;
+            _customersRepository = customersRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<IEnumerable<Customer>> GetAllCustomersAsync()
         {
-            IEnumerable<Customer> customers = await _custumersRepository.GetAllCustomersAsync();
-            return customers;
+            return await _customersRepository.GetAllCustomersAsync();
         }
 
         public async Task<Customer> GetCustomerByIdAsync(int id)
         {
-            Customer customer = await _custumersRepository.GetCustomerByIdAsync(id);
-            if (customer == null)
-            {
-                throw new Exception("Not Found");
-            }
-            return customer;
-        }
-
-        public async Task<Customer> CreateCustomerAsync([FromBody] Customer newCustomer)
-        {
-            Customer currentCustomer = await _custumersRepository.CreateCustomerAsync(newCustomer);
-
-            if (currentCustomer != null)
-            {
-                throw new Exception("Usuário já existe");
-            }
-            return newCustomer;
-        }
-
-        public async Task<Customer> UpdateCustomerAsync(int id, [FromBody] Customer customer)
-        {
-            Customer currentCustomer = await _custumersRepository.UpdateCustomerAsync(id, customer);
-
-            if (currentCustomer == null)
-            {
-                throw new Exception("Not found");
-            }
-            return customer;
-        }
-
-        public async Task<Customer> DeleteCustomerAsync(int id)
-        {
-            Customer customer = await _custumersRepository.DeleteCustomerAsync(id);
+            Customer customer = await _customersRepository.GetCustomerByIdAsync(id);
 
             if (customer == null)
             {
-                throw new Exception("Not found");
+                throw new NotFoundException("Customer");
             }
 
             return customer;
+        }
+
+        public async Task<Customer> CreateCustomerAsync(Customer customer)
+        {
+            Customer currentCustomer = await _customersRepository.GetCustomerByIdAsync(customer.Id);
+            if (currentCustomer != null && currentCustomer.Equals(customer))
+            {
+                throw new Exception("Customer already exists.");
+            }
+            await _customersRepository.CreateCustomerAsync(customer);
+            await _unitOfWork.SaveChangesAsync();
+            return currentCustomer;
+        }
+
+        public async Task<Customer> UpdateCustomerAsync(int id, Customer customer)
+        {
+            Customer currentCustomer = await _customersRepository.GetCustomerByIdAsync(id);
+            if (currentCustomer is null)
+            {
+                throw new NotFoundException("Customer");
+            }
+
+            currentCustomer.Name = customer.Name;
+            currentCustomer.Email = customer.Email;
+            currentCustomer.Phone = customer.Phone;
+            await _unitOfWork.SaveChangesAsync();
+
+            return customer;
+        }
+
+        public async Task DeleteCustomerAsync(int id, Customer customer)
+        {
+            Customer currentCustomer = await _customersRepository.GetCustomerByIdAsync(id);
+            if(currentCustomer is null)
+            {
+                throw new NotFoundException("Customer");
+            }
+
+            _customersRepository.RemoveCustomer(customer);
+            await _unitOfWork.SaveChangesAsync();
         }
     }
 }

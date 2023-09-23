@@ -1,92 +1,62 @@
-using Microsoft.AspNetCore.Mvc;
-
-using OsDsII.api.Data;
-
+﻿using Microsoft.AspNetCore.Mvc;
+using OsDsII.api.Exceptions;
 using OsDsII.api.Models;
-
-using OsDsII.api.Services.Interfaces;
+using OsDsII.api.Services.Interaces;
 
 namespace OsDsII.api.Controllers
-
 {
-
     [ApiController]
-
     [Route("[controller]")]
-
     public class CustomersController : ControllerBase
-
     {
-
-        private readonly DataContext _context;
-
         private readonly ICustomersService _customersService;
-
-        public CustomersController(DataContext dataContext, ICustomersService customersService)
-
+        public CustomersController(ICustomersService customersService)
         {
-
-            _context = dataContext;
-
             _customersService = customersService;
-
         }
 
         [HttpGet]
-
         public async Task<IActionResult> GetAllAsync()
-
         {
-
             try
-
             {
-
                 IEnumerable<Customer> customers = await _customersService.GetAllCustomersAsync();
-
                 return Ok(customers);
-
             }
-
-            catch (Exception ex)
-
+            catch (BaseException ex)
             {
-
-                return BadRequest(ex.Message);
-
+                return ex.GetResponse();
             }
-
         }
 
         [HttpGet("{id}")]
-
         public async Task<IActionResult> GetCustomerByIdAsync(int id)
         {
             try
             {
                 Customer customer = await _customersService.GetCustomerByIdAsync(id);
-
                 return Ok(customer);
             }
-            catch (Exception ex)
+            catch (BaseException ex)
             {
-                return BadRequest(ex.Message);
+                return ex.GetResponse();
             }
+
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateCustomer([FromBody] Customer newCustomer)
+        public async Task<IActionResult> CreateCustomer([FromBody] Customer customer)
         {
             try
             {
-                Customer existingCustomer = await _customersService.CreateCustomerAsync(newCustomer);
-
-                return Ok(newCustomer);
+                Customer currentCustomer = await _customersService.CreateCustomerAsync(customer);
+                return Ok(customer);
             }
-            catch (Exception ex)
+            catch (BaseException ex)
             {
-                return BadRequest(ex.Message);
+                return ex.GetResponse();
             }
+
         }
 
         [HttpPut("{id}")]
@@ -95,12 +65,11 @@ namespace OsDsII.api.Controllers
             try
             {
                 Customer currentCustomer = await _customersService.UpdateCustomerAsync(id, customer);
-
-                return Ok(customer);
+                return Ok();
             }
-            catch (Exception ex)
+            catch (BaseException ex)
             {
-                return BadRequest(ex.Message);
+                return ex.GetResponse();
             }
         }
 
@@ -109,24 +78,16 @@ namespace OsDsII.api.Controllers
         {
             try
             {
-                Customer customer = await _customersService.DeleteCustomerAsync(id);
-
-                return Ok();
+                Customer customer = await _customersService.GetCustomerByIdAsync(id);
+                await _customersService.DeleteCustomerAsync(id, customer);
+                return NoContent();
             }
-            catch (Exception ex)
+            catch (BaseException ex)
             {
-                return BadRequest(ex.Message);
+                return ex.GetResponse();
             }
+
         }
 
-
-
-
-
-
-
-
-
     }
-
 }
