@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OsDsII.api.Dto;
 using OsDsII.api.Exceptions;
+using OsDsII.api.Http;
 using OsDsII.api.Models;
 using OsDsII.api.Services.Interaces;
 
@@ -21,7 +23,8 @@ namespace OsDsII.api.Controllers
             try
             {
                 IEnumerable<Customer> customers = await _customersService.GetAllCustomersAsync();
-                return Ok(customers);
+                IEnumerable<CustomerDto> customerDto = customers.Select(c => c.ToCustomer());
+                return HttpResponseApi<IEnumerable<CustomerDto>>.Ok(customerDto);
             }
             catch (BaseException ex)
             {
